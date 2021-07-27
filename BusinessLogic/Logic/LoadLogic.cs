@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogic
+namespace BusinessLogic.Logic
 {
-    public class Class1
+    public static class LoadLogic
     {
+        public static void GetListDocs()
+        {
+
+        }
     }
 }
