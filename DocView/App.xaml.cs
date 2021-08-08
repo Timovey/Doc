@@ -2,8 +2,6 @@
 using System;
 using System.Configuration;
 using System.Windows;
-using Unity;
-using Unity.Lifetime;
 
 
 namespace DocView
@@ -17,17 +15,17 @@ namespace DocView
         {
             base.OnStartup(e);
 
-            IUnityContainer currentContainer = BuildUnityContainer(); 
-            var mainWindow = currentContainer.Resolve<MainWindow>();
-            mainWindow.Show();
+            //IUnityContainer currentContainer = BuildUnityContainer(); 
+            //var mainWindow = currentContainer.Resolve<MainWindow>();
+           // mainWindow.Show();
         }
 
 
-        private static IUnityContainer BuildUnityContainer()
-        {
-            var currentContainer = new UnityContainer(); 
-           // currentContainer.RegisterType<SaveLogic>(new HierarchicalLifetimeManager());
-            return currentContainer;
-        }
+        //private static IUnityContainer BuildUnityContainer()
+        //{
+        //    var currentContainer = new UnityContainer(); 
+        //   // currentContainer.RegisterType<SaveLogic>(new HierarchicalLifetimeManager());
+        //    return currentContainer;
+        //}
     }
 }

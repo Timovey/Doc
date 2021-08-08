@@ -25,9 +25,18 @@ namespace BusinessLogic.Logic
                 app.Visible = true;
                 //Document doc = app.Documents.Add(Visible: true);
                 //doc.Save();
-                Document doc = app.Documents.Open(FileName: filePath,Visible:true);
-                //doc.Save();
-                app.Quit();
+                await System.Threading.Tasks.Task.Run(() =>
+                {
+                    try
+                    {
+                        Document doc = app.Documents.Open(FileName: filePath, Visible: true);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                });
+               
 
                 
             }

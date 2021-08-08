@@ -69,5 +69,16 @@ namespace DocView
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void DeleteFile_Click(object sender, RoutedEventArgs e)
+        {
+            if (Listbox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Овощей пока еще не завезли", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            SaveLogic.DeleteFile(Listbox.SelectedValue.ToString());
+            Load();
+        }
     }
 }
