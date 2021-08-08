@@ -23,8 +23,6 @@ namespace BusinessLogic.Logic
 
                 Application app = new Application();
                 app.Visible = true;
-                //Document doc = app.Documents.Add(Visible: true);
-                //doc.Save();
                 await System.Threading.Tasks.Task.Run(() =>
                 {
                     try

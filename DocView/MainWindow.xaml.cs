@@ -60,7 +60,6 @@ namespace DocView
                 if ((bool)dialog.ShowDialog())
                 {
                     TakeLogic.TakeFile(dialog.FileName, Listbox.SelectedValue.ToString());
-                    MessageBox.Show("Сделано", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                
             }
@@ -78,6 +77,7 @@ namespace DocView
             }
 
             SaveLogic.DeleteFile(Listbox.SelectedValue.ToString());
+            MessageBox.Show("Произошла жатва, овощ удален", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
             Load();
         }
     }
