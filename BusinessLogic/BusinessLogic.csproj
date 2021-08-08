@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Logic\LoadLogic.cs" />
     <Compile Include="Logic\SaveLogic.cs" />
+    <Compile Include="Logic\TakeLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
